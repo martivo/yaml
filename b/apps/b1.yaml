@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namesapce: b-apps
+    namespace: b1
   project: b
   source:
     path: b/b1

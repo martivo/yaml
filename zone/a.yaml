@@ -31,7 +31,7 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namesapce: a-apps
+    namespace: a-apps
   project: a
   source:
     path: a/apps

@@ -30,6 +30,7 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
+    namespace: b-apps
   project: b
   source:
     path: b/apps
