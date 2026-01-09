@@ -4,6 +4,7 @@ metadata:
   name: a
 spec:
   namespaces:
+    - name: a-apps
     - name: a1
     - name: a2
   pools:
@@ -19,4 +20,18 @@ spec:
         - key: max-size
           value: 2
 
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: a
+  namespace: a-apps
+spec:
+  destination:
+    server: https://kubernetes.default.svc
+  project: a
+  source:
+    path: a/apps
+    repoURL: https://github.com/martivo/yaml.git
+    targetRevision: HEAD
 
