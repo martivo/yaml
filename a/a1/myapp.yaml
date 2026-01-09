@@ -111,4 +111,4 @@ spec:
               service:
                 name: api-a1 #Service nimi
                 port:
-                  number: 8181 # Service port
+                  number: 8080 # Service port
