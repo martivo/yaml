@@ -6,6 +6,7 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
+    namespace: a2
   project: a
   source:
     path: a/a2
