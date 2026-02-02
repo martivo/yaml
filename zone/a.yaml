@@ -3,7 +3,8 @@ kind: Zone
 metadata:
   name: a
 spec:
-  namespaces: []
+  namespaces:
+    - name: a-apps
   pools:
     - name: default
       requirements:
