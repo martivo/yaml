@@ -3,6 +3,7 @@ kind: Zone
 metadata:
   name: a
 spec:
+  namespaces: []
   pools:
     - name: default
       requirements:
@@ -15,14 +16,4 @@ spec:
           value: 1
         - key: max-size
           value: 2
-    - name: other
-      requirements:
-        - key: instance-type
-          values:
-            - t3.large
-        - key: capacity-type
-          value: ON_DEMAND
-        - key: min-size
-          value: 1
-        - key: max-size
-          value: 2
+
