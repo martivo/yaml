@@ -12,9 +12,3 @@ spec:
     path: a/a2
     repoURL: https://github.com/martivo/yaml.git
     targetRevision: HEAD
-  syncPolicy:
-    syncOptions:
-      - CreateNamespace=true
-      - RespectIgnoreDifferences=true
-      - Retry=true
-      - ServerSideApply=true
