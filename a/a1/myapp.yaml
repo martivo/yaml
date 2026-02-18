@@ -39,6 +39,7 @@ spec:
   ports:
   - port: 8080
     targetPort: 80
+    name: myhttp
 ---
 apiVersion: v1
 kind: Service
@@ -90,7 +91,7 @@ spec:
               service:
                 name: api-a1 #Service nimi
                 port:
-                  number: 8080 # Service port
+                  name: myhttp
           - path: /api
             pathType: Prefix
             backend:
